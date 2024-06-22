@@ -2,7 +2,15 @@
     margin: 2rem 7vw 2rem 7vw;
 }
 
-.mainSection div img {
-    width: 86vw;
-    height: auto;
+
+.mainSection div {
+    margin: 1rem 0 1rem 0;
+    display: grid;
+    place-content: center;
 }
+
+.mainSection div img {
+    width: auto;
+    height: 50vh;
+}
+
