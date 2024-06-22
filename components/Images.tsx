@@ -16,7 +16,7 @@ export default function Images({ page, filter }: {page: number, filter: String})
 
 
     useEffect(() => {
-        const filteredImg = images.filter(img => img.alt_description.toLowerCase().includes(filter.toLowerCase()));
+        const filteredImg = images.filter(img => img.alt_description.toLowerCase().includes(filter.toLowerCase())).slice(6*(page-1), 6*(page-1)+6);
 
         setPageImg([...filteredImg]);
     }, [filter]);
