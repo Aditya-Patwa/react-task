@@ -1,0 +1,36 @@
+.imagesDiv {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: .5rem;
+}
+
+.imageDiv {
+    border: 1px solid rgb(215, 215, 215);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: .5rem;
+}
+
+
+.imageDiv div {
+    display: grid;
+    place-content: center;
+}
+
+.imageDiv div img {
+    width: auto;
+    height: 10rem;
+}
+
+@media (max-width: 768px) {
+    .imagesDiv {
+        grid-template-columns: 49% 49%;
+    }
+}
+
+@media (max-width: 480px) {
+    .imagesDiv {
+        grid-template-columns: 100%;
+    }
+}
